@@ -5,9 +5,10 @@ export default {
   async auth() {
     if (!Cookie.get("user_id")) {
       await Api.get("/auth").then(response => {
-        Cookie.set("user_id", response);
+        Cookie.set("user_id", response.data);
+        return response.data;
       });
     }
-    return Cookie.get("user_id");
+    return { data: Cookie.get("user_id") };
   }
 };

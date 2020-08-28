@@ -1,0 +1,23 @@
+diff a/src/views/Home.vue b/src/views/Home.vue	(rejected hunks)
+@@ -4,3 +4,11 @@
+-    <div v-else class="px-4 py-8 bg-gray-300 text-gray-700 text-shadow-lg font w-full container mb-8">
+-      <div class="w-full text-center text-2xl md:text-4xl flex-col justify-center font-bold flex items-center mb-4">
+-        <icon name="question-mark-circle" class="w-8 mb-4 nm-flat-gray-300 rounded-full h-auto text-blue-700 mr-2" />
++    <div
++      v-else
++      class="px-4 py-8 bg-gray-300 text-gray-700 text-shadow-lg font w-full container mb-8"
++    >
++      <div
++        class="w-full text-center text-2xl md:text-4xl flex-col justify-center font-bold flex items-center mb-4"
++      >
++        <icon
++          name="question-mark-circle"
++          class="w-8 mb-4 nm-flat-gray-300 rounded-full h-auto text-blue-700 mr-2"
++        />
+@@ -10 +18,5 @@
+-        <div class="font-bold cursor-pointer justify-between w-full text-left my-4 text-lg flex flex-wrap nm-flat-gray-300 hover:nm-inset-gray-300 py-2 px-2" :key="option.id" v-for="option in quiz.quiz_options">
++        <div
++          class="font-bold cursor-pointer justify-between w-full text-left my-4 text-lg flex flex-wrap nm-flat-gray-300 hover:nm-inset-gray-300 py-2 px-2"
++          :key="option.id"
++          v-for="option in quiz.quiz_options"
++        >
